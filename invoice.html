@@ -1,0 +1,105 @@
+<!--
+Name: Amoya Collins
+ID: 2408831
+Assignment#: Individual Assignment #2
+Day/Time of Class: Tuesday @ 11:00 AM
+Module Name/Module Code: CIT2011 - Web Development
+Free Hosting Link: https://amoya-c.github.io/IA2-web-programming/
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Invoice</title>
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <header class="checkout-header">
+        <nav class="checkout-nav">
+            <img src="wishy_washy.png" alt="Logo">
+
+            <div>
+                <a href="products.html">Shop</a>
+            </div>
+            <div>
+                <a href="about-us.html">About Us</a>
+            </div>
+            <div>
+                <a href="cart.html">
+                    <img class="cart-img" src="cart-img.png" alt="Cart">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <body class="invoice-body">
+       <div class="in-container">
+            <button id="print-btn" class="print">PRINT INVOICE</button>
+            <button id="download-btn" class="download">DOWNLOAD INVOICE</button>
+       </div>
+       <div class="background">
+       <div id="invoice">
+        <div class="invoice-header">
+                <div class="brand">
+                    <img class="in-logo" src="logo.png" alt="logo">
+                    <div>
+                        <h1>Wishy Washy Footwear</h1> 
+                        <p>"Fake it 'till you make it..."</p>
+                    </div>
+                </div>
+                    <div class="right-header">
+                        <div><span class="invoice-style">INVOICE</span></div>
+                        <div><strong>No: </strong>#02-161125</div>
+                        <div><strong>Date: </strong>18/11/2025</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="invoice-container">
+                <div>
+                    <h2>Bill to</h2>
+                    <div id="billings"></div>
+                </div>
+                <div>
+                    <h2>From</h2>
+                    <div><strong>Wishy Washy Footwear</strong></div>
+                    <div><strong>Phone Number: </strong>(876) 518-8843</div>
+                    <div><strong>Email:</strong> <a href="mailto:amoyaabcollins@students.utech.edu.jm">2408831@utech.edu.jm</a></div>
+                </div>
+            </div>
+
+            <div class="line-items">
+                <table class="invoice-table">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Unit Price (JMD$)</th>
+                            <th>Quantity</th>
+                            <th>Total (JMD$)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="invoice-items">
+                        <tr id="description"></tr>
+                        <tr id="unit-price"></tr>
+                        <tr id="quantity"></tr>
+                        <tr id="total-price"></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="in-totals">
+                <div class="notes">
+                    <strong>Notes:</strong>
+                    <p>Thank you for shopping with us!</p>
+                </div>
+                <div class="summary" id="summary">
+                    <div id="invoice-total"></div>
+                    <p>Hi</p>
+                </div>
+            </div>
+       </div>
+       </div>
+    </body>
+    <script src="wishy-washy.js"></script>
+</html>
